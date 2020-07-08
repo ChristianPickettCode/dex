@@ -10,6 +10,11 @@
             "StackName": "amplify-dex-dev-210546",
             "StackId": "arn:aws:cloudformation:us-east-1:207802189926:stack/amplify-dex-dev-210546/292ec2e0-c0b7-11ea-a373-0abd62a7624a",
             "AmplifyAppId": "d1zfu4mn2h97at"
+        },
+        "categories": {
+            "auth": {
+                "dexbb347a04": {}
+            }
         }
     }
 }
