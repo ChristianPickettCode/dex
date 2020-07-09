@@ -16,6 +16,7 @@ export const getUser = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -35,6 +36,7 @@ export const getUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -44,6 +46,7 @@ export const getUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -53,12 +56,15 @@ export const getUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -85,9 +91,11 @@ export const listUsers = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       nextToken
@@ -105,6 +113,7 @@ export const getRoom = /* GraphQL */ `
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -124,9 +133,11 @@ export const getRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       admin {
@@ -144,9 +155,11 @@ export const getRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       moderators {
@@ -164,12 +177,15 @@ export const getRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -196,6 +212,7 @@ export const listRooms = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -205,6 +222,7 @@ export const listRooms = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -214,9 +232,11 @@ export const listRooms = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       nextToken
@@ -242,6 +262,7 @@ export const getChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -251,6 +272,7 @@ export const getChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -260,20 +282,24 @@ export const getChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       messages {
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -293,12 +319,14 @@ export const listChats = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         messages {
           nextToken
         }
         createdAt
+        updatedAt
         owner
       }
       nextToken
@@ -324,9 +352,11 @@ export const getMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       chat {
@@ -337,15 +367,18 @@ export const getMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         messages {
           nextToken
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -366,14 +399,17 @@ export const listMessages = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         chat {
           id
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       nextToken

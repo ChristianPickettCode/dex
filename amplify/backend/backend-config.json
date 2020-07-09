@@ -1,13 +1,14 @@
 {
 	"auth": {
-		"dexbb347a04": {
+		"dexc088eb82": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
-			"dependsOn": []
+			"dependsOn": [],
+			"customAuth": false
 		}
 	},
 	"api": {
-		"dex": {
+		"dexAPI": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {
@@ -16,7 +17,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
 						"userPoolConfig": {
-							"userPoolId": "authdexbb347a04"
+							"userPoolId": "authdexc088eb82"
 						}
 					}
 				}

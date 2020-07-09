@@ -16,6 +16,7 @@ export const onCreateUser = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -35,6 +36,7 @@ export const onCreateUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -44,6 +46,7 @@ export const onCreateUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -53,12 +56,15 @@ export const onCreateUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -78,6 +84,7 @@ export const onUpdateUser = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -97,6 +104,7 @@ export const onUpdateUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -106,6 +114,7 @@ export const onUpdateUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -115,12 +124,15 @@ export const onUpdateUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -140,6 +152,7 @@ export const onDeleteUser = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -159,6 +172,7 @@ export const onDeleteUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -168,6 +182,7 @@ export const onDeleteUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -177,12 +192,15 @@ export const onDeleteUser = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -198,6 +216,7 @@ export const onCreateRoom = /* GraphQL */ `
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -217,9 +236,11 @@ export const onCreateRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       admin {
@@ -237,9 +258,11 @@ export const onCreateRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       moderators {
@@ -257,12 +280,15 @@ export const onCreateRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -278,6 +304,7 @@ export const onUpdateRoom = /* GraphQL */ `
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -297,9 +324,11 @@ export const onUpdateRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       admin {
@@ -317,9 +346,11 @@ export const onUpdateRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       moderators {
@@ -337,12 +368,15 @@ export const onUpdateRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -358,6 +392,7 @@ export const onDeleteRoom = /* GraphQL */ `
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
@@ -377,9 +412,11 @@ export const onDeleteRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       admin {
@@ -397,9 +434,11 @@ export const onDeleteRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       moderators {
@@ -417,12 +456,15 @@ export const onDeleteRoom = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -446,6 +488,7 @@ export const onCreateChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -455,6 +498,7 @@ export const onCreateChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -464,20 +508,24 @@ export const onCreateChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       messages {
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -501,6 +549,7 @@ export const onUpdateChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -510,6 +559,7 @@ export const onUpdateChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -519,20 +569,24 @@ export const onUpdateChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       messages {
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -556,6 +610,7 @@ export const onDeleteChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         admin {
@@ -565,6 +620,7 @@ export const onDeleteChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         moderators {
@@ -574,20 +630,24 @@ export const onDeleteChat = /* GraphQL */ `
           admin
           lastActive
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       messages {
         items {
           id
           createdAt
+          updatedAt
           owner
         }
         nextToken
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -611,9 +671,11 @@ export const onCreateMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       chat {
@@ -624,15 +686,18 @@ export const onCreateMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         messages {
           nextToken
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -656,9 +721,11 @@ export const onUpdateMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       chat {
@@ -669,15 +736,18 @@ export const onUpdateMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         messages {
           nextToken
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }
@@ -701,9 +771,11 @@ export const onDeleteMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         createdAt
+        updatedAt
         owner
       }
       chat {
@@ -714,15 +786,18 @@ export const onDeleteMessage = /* GraphQL */ `
           group
           accessCode
           createdAt
+          updatedAt
           owner
         }
         messages {
           nextToken
         }
         createdAt
+        updatedAt
         owner
       }
       createdAt
+      updatedAt
       owner
     }
   }

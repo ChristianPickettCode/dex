@@ -1,10 +1,10 @@
 {
-    "AppSyncApiName": "dex",
+    "AppSyncApiName": "dexAPI",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
     "DynamoDBEnableServerSideEncryption": "false",
     "AuthCognitoUserPoolId": {
         "Fn::GetAtt": [
-            "authdexbb347a04",
+            "authdexc088eb82",
             "Outputs.UserPoolId"
         ]
     }

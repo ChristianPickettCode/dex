@@ -3,10 +3,10 @@ type User @model @auth(rules: [{ allow: owner }]) {
   firstName: String
   lastName: String
   admin: Boolean
-  lastActive: AWSDate
+  lastActive: AWSDateTime
   createdRooms: [Room] @connection(name: "UserRooms")
   joinedRooms: [Room]
-  createdAt: AWSDate
+  createdAt: AWSDateTime
 }
 
 type Room @model @auth(rules: [{ allow: owner }]) {
@@ -18,19 +18,19 @@ type Room @model @auth(rules: [{ allow: owner }]) {
   users: [User]
   admin: User @connection(name: "UserRooms")
   moderators: [User]
-  createdAt: AWSDate
+  createdAt: AWSDateTime
 }
 
 type Chat @model @auth(rules: [{ allow: owner }]) {
   id: ID!
   room: Room @connection(name: "RoomChats")
   messages: [Message] @connection(name: "ChatMessages")
-  createdAt: AWSDate
+  createdAt: AWSDateTime
 }
 
 type Message @model @auth(rules: [{ allow: owner }]) {
   id: ID!
   user: User @connection
   chat: Chat @connection(name: "ChatMessages")
-  createdAt: AWSDate
+  createdAt: AWSDateTime
 }
